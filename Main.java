@@ -2,7 +2,7 @@ package com.company;
 import javax.swing.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
-// import java.util.Scanner;
+
 
 public class Main extends JFrame implements ActionListener {
     public JLabel label = new JLabel("Wpisz poniżej tekst do zaszyfrowania (bez polskich znaków i znaków specjalnych)");
@@ -32,22 +32,13 @@ public class Main extends JFrame implements ActionListener {
         app.setVisible(true);
 
 
-        /*String input = inputText();
-        String encrypted = Main.encryptCode(input);
-        System.out.println("Wpisałeś " + input + ". Po zaszyfrowaniu to :" + encrypted);
-        System.out.println("Klucz: Przesunięcie litery o 3 do porzodu"); */
+       
     }
-//małe litery z ascii (97 -122)
-// spacja to 32
+
     public static String inputText(){
 
         String textToEncrypt = text.getText();
-        /*Scanner scan = new Scanner(System.in);
-        System.out.println("Wpisz tekst do zaszyfrowania (bez polskich znaków i znaków specjalnych)");
-        String textToEncrypt= scan.nextLine();
-
-        scan.close();
-        return textToEncrypt;*/
+       
         return textToEncrypt;
     }
 
